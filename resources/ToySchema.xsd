@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.myshema.by/ToySchema" xmlns:xl="http://www.myshema.by/ToySchema"
+	elementFormDefault="qualified">
+
+	<xs:complexType name="toys">
+		<xs:sequence>
+			<xs:element name="ball" type="xl:ball_type" maxOccurs="unbounded"></xs:element>
+			<xs:element name="car" type="xl:car_type" maxOccurs="unbounded"></xs:element>
+			<xs:element name="constructor" type="xl:constructor_type"
+				maxOccurs="unbounded"></xs:element>
+			<xs:element name="doll" type="xl:doll_type" maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ball_type">
+		<xs:sequence>
+			<xs:element name="toy" type="xl:toy_type" minOccurs="1"
+				maxOccurs="1" />
+			<xs:element name="sport" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="car_type">
+		<xs:sequence>
+			<xs:element name="toy" type="xl:toy_type" minOccurs="1"
+				maxOccurs="1" />
+			<xs:element name="type" type="xs:string" />
+			<xs:element name="color" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="constructor_type">
+		<xs:sequence>
+			<xs:element name="toy" type="xl:toy_type" minOccurs="1"
+				maxOccurs="1" />
+			<xs:element name="type" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="doll_type">
+		<xs:sequence>
+			<xs:element name="toy" type="xl:toy_type" minOccurs="1"
+				maxOccurs="1" />
+			<xs:element name="line" type="xs:string" />
+			<xs:element name="effect" type="xs:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="toy_type">
+		<xs:sequence>
+			<xs:element name="title" type="xs:string" />
+			<xs:element name="size" type="xl:size_toy" />
+			<xs:element name="age" type="xl:age_toy" />
+			<xs:element name="price" type="xs:double" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:simpleType name="size_toy">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="LARGE" />
+			<xs:enumeration value="MEDIUM" />
+			<xs:enumeration value="SMALL" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="age_toy">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="THREE" />
+			<xs:enumeration value="SIX" />
+			<xs:enumeration value="NINE" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

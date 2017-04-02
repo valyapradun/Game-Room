@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<toys xmlns="http://www.myshema.by/ToySchema2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http:/www.myshema.by/ToySchema ToySchema">
+	<ball>
+		<title>Tennis balls (3 pieces)</title>
+		<size>SMALL</size>
+		<age>NINE</age>
+		<price>25.7</price>
+		<sport>tennis</sport>
+	</ball>
+	<ball>
+		<title>Football ball</title>
+		<size>MEDIUM</size>
+		<age>SIX</age>
+		<price>65</price>
+		<sport>football</sport>
+	</ball>
+	<ball>
+		<title>Сhildren's ball</title>
+		<size>LARGE</size>
+		<age>THREE</age>
+		<price>9.5</price>
+		<sport>no</sport>
+	</ball>
+	<car>
+		<title>Tractor Don</title>
+		<size>MEDIUM</size>
+		<age>SIX</age>
+		<price>17.6</price>
+		<type>technique</type>
+		<color>yellow</color>
+	</car>
+	<car>
+		<title>Inertial racing car</title>
+		<size>SMALL</size>
+		<age>NINE</age>
+		<price>18.9</price>
+		<type>race</type>
+		<color>red</color>
+	</car>
+	<car>
+		<title>Ambulance</title>
+		<size>MEDIUM</size>
+		<age>THREE</age>
+		<price>35</price>
+		<type>specialized</type>
+		<color>white</color>
+	</car>
+	<car>
+		<title>Tank</title>
+		<size>LARGE</size>
+		<age>SIX</age>
+		<price>32.8</price>
+		<type>military equipment</type>
+		<color>khaki</color>
+	</car>
+	<constructor>
+		<title>Lego Duplo Kindergarten</title>
+		<size>MEDIUM</size>
+		<age>THREE</age>
+		<price>38</price>
+		<type>Lego</type>
+	</constructor>
+	<constructor>
+		<title>Lego City Van Pizzeria</title>
+		<size>MEDIUM</size>
+		<age>SIX</age>
+		<price>38.7</price>
+		<type>Lego</type>
+	</constructor>
+	<constructor>
+		<title>Lego Technic Motorcycle</title>
+		<size>SMALL</size>
+		<age>NINE</age>
+		<price>48.8</price>
+		<type>Lego</type>
+	</constructor>
+	<constructor>
+		<title>Cubes Alphabet</title>
+		<size>LARGE</size>
+		<age>THREE</age>
+		<price>12</price>
+		<type>Cubes</type>
+	</constructor>
+	<constructor>
+		<title>Math Cubes</title>
+		<size>LARGE</size>
+		<age>SIX</age>
+		<price>10.6</price>
+		<type>Cubes</type>
+	</constructor>
+	<constructor>
+		<title>Magnetic сonstructor Magformers</title>
+		<size>MEDIUM</size>
+		<age>NINE</age>
+		<price>10.6</price>
+		<type>Magnetic сonstructor</type>
+	</constructor>
+	<doll>
+		<title>Doll Barbie princess</title>
+		<size>MEDIUM</size>
+		<age>SIX</age>
+		<price>94.6</price>
+		<line>Barbie</line>
+		<effect>without effects</effect>
+	</doll>
+	<doll>
+		<title>Doll Baby Born for bathing</title>
+		<size>LARGE</size>
+		<age>THREE</age>
+		<price>76.8</price>
+		<line>Baby Born</line>
+		<effect>audio effect</effect>
+	</doll>
+		<doll>
+		<title>Doll Monster High Franky Shtein</title>
+		<size>MEDIUM</size>
+		<age>NINE</age>
+		<price>95.3</price>
+		<line>Monster High</line>
+		<effect>sound and light effects</effect>
+	</doll>
+</toys>
