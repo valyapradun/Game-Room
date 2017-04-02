@@ -11,8 +11,8 @@ import static com.epam.training.java.gameroom.service.InitializationUtil.*;
 
 public class GameRoom {
 	private Toy[] toys;
-	private int totalCount;
-	private double total—ost;
+	private int count;
+	private double cost;
 
 	public GameRoom() {
 	}
@@ -20,8 +20,8 @@ public class GameRoom {
 
 	public Toy[] initialization(int totalCount, double total—ost, ArrayList<Toy> catalog) throws GameRoomException {
 		if ((totalCount != 0) || (total—ost != 0) || catalog != null) {
-			this.totalCount = totalCount;
-			this.total—ost = total—ost;
+			this.count = totalCount;
+			this.cost = total—ost;
 			this.toys = new Toy[totalCount];
 			double cost = 0;
 			int count = 0;
