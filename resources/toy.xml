@@ -3,6 +3,20 @@
 <toys xmlns="http://www.myshema.by/ToySchema2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http:/www.myshema.by/ToySchema ToySchema">
 	<ball>
+		<title>Basketball ball</title>
+		<size>MEDIUM</size>
+		<age>NINE</age>
+		<price>34</price>
+		<sport>basketball</sport>
+	</ball>
+	<ball>
+		<title>Wubble Bubble Ball</title>
+		<size>LARGE</size>
+		<age>THREE</age>
+		<price>25.32</price>
+		<sport>no</sport>
+	</ball>
+	<ball>
 		<title>Tennis balls (3 pieces)</title>
 		<size>SMALL</size>
 		<age>NINE</age>
@@ -44,7 +58,7 @@
 		<size>MEDIUM</size>
 		<age>THREE</age>
 		<price>35</price>
-		<type>specialized</type>
+		<type>helper</type>
 		<color>white</color>
 	</car>
 	<car>
@@ -54,6 +68,14 @@
 		<price>32.8</price>
 		<type>military equipment</type>
 		<color>khaki</color>
+	</car>
+	<car>
+		<title>Toy bus</title>
+		<size>LARGE</size>
+		<age>THREE</age>
+		<price>19.5</price>
+		<type>helper</type>
+		<color>green</color>
 	</car>
 	<constructor>
 		<title>Lego Duplo Kindergarten</title>
@@ -120,5 +142,21 @@
 		<price>95.3</price>
 		<line>Monster High</line>
 		<effect>sound and light effects</effect>
+	</doll>
+	<doll>
+		<title>Doll Ever After High Medellin</title>
+		<size>MEDIUM</size>
+		<age>NINE</age>
+		<price>84.2</price>
+		<line>Ever After High</line>
+		<effect>no</effect>
+	</doll>
+		<doll>
+		<title>Doll Baby Annabell</title>
+		<size>MEDIUM</size>
+		<age>SIX</age>
+		<price>73</price>
+		<line>Baby Annabell</line>
+		<effect>sound effects</effect>
 	</doll>
 </toys>
