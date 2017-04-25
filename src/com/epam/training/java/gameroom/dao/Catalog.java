@@ -1,7 +1,6 @@
-package com.epam.training.java.gameroom.controller;
+package com.epam.training.java.gameroom.dao;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 import com.epam.training.java.gameroom.domain.AgeToy;
 import com.epam.training.java.gameroom.domain.Ball;
@@ -11,14 +10,10 @@ import com.epam.training.java.gameroom.domain.Doll;
 import com.epam.training.java.gameroom.domain.SizeToy;
 import com.epam.training.java.gameroom.domain.Toy;
 
-public class Util {
+public class Catalog {
+	private ArrayList<Toy> catalog = new ArrayList<Toy>();
 
-	public Util() {
-
-	}
-
-	public static ArrayList<Toy> createCatalog() {
-		ArrayList<Toy> catalog = new ArrayList<Toy>();
+	public Catalog() {
 		catalog.add(new Ball("Basketball ball", SizeToy.MEDIUM, AgeToy.NINE, 34, "basketball"));
 		catalog.add(new Ball("Wubble Bubble Ball", SizeToy.LARGE, AgeToy.THREE, 25.32, "no"));
 		catalog.add(new Ball("Tennis balls (3 pieces)", SizeToy.SMALL, AgeToy.NINE, 25.7, "tennis"));
@@ -34,35 +29,20 @@ public class Util {
 		catalog.add(new Constructor("Lego Technic Motorcycle", SizeToy.SMALL, AgeToy.NINE, 48.8, "Lego"));
 		catalog.add(new Constructor("Cubes Alphabet", SizeToy.LARGE, AgeToy.THREE, 12, "Cubes"));
 		catalog.add(new Constructor("Math Cubes", SizeToy.LARGE, AgeToy.SIX, 10.6, "Cubes"));
-		catalog.add(new Constructor("Magnetic ñonstructor Magformers", SizeToy.MEDIUM, AgeToy.NINE, 10.6, "Magnetic ñonstructor"));
+		catalog.add(new Constructor("Magnetic ñonstructor Magformers", SizeToy.MEDIUM, AgeToy.NINE, 10.6,
+				"Magnetic ñonstructor"));
 		catalog.add(new Doll("Doll Barbie princess", SizeToy.MEDIUM, AgeToy.SIX, 94.6, "Barbie", "without effects"));
-		catalog.add(new Doll("Doll Baby Born for bathing", SizeToy.LARGE, AgeToy.THREE, 76.8, "Baby Born", "audio effect"));
-		catalog.add(new Doll("Doll Monster High Franky Shtein", SizeToy.MEDIUM, AgeToy.NINE, 95.3, "Monster High","sound and light effects"));
-		catalog.add(new Doll("Doll Ever After High Medellin", SizeToy.MEDIUM, AgeToy.NINE, 84.2, "Ever After High", "no"));
-		catalog.add(new Doll("Doll Baby Annabell", SizeToy.MEDIUM, AgeToy.SIX, 73, "Baby Annabell","sound effects"));
+		catalog.add(
+				new Doll("Doll Baby Born for bathing", SizeToy.LARGE, AgeToy.THREE, 76.8, "Baby Born", "audio effect"));
+		catalog.add(new Doll("Doll Monster High Franky Shtein", SizeToy.MEDIUM, AgeToy.NINE, 95.3, "Monster High",
+				"sound and light effects"));
+		catalog.add(
+				new Doll("Doll Ever After High Medellin", SizeToy.MEDIUM, AgeToy.NINE, 84.2, "Ever After High", "no"));
+		catalog.add(new Doll("Doll Baby Annabell", SizeToy.MEDIUM, AgeToy.SIX, 73, "Baby Annabell", "sound effects"));
+	}
+
+	public ArrayList<Toy> getCatalog() {
 		return catalog;
-	}
-
-	public static void printArrayList(ArrayList<Toy> toys) throws UtilException {
-		if (toys != null) {
-			Iterator<Toy> it = toys.iterator();
-			while (it.hasNext()) {
-				System.out.println(it.next());
-			}
-		} else {
-			throw new UtilException("Null was sent in a printArrayList method!");
-		}
-	}
-
-	public static void printArray(Toy[] toys) throws UtilException {
-		if (toys != null) {
-			for (Toy toy : toys) {
-				System.out.println(toy);
-			}
-			System.out.println("");
-		} else {
-			throw new UtilException("Null was sent in a printArray method!");
-		}
 	}
 
 }
