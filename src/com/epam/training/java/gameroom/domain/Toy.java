@@ -1,6 +1,6 @@
 package com.epam.training.java.gameroom.domain;
 
-abstract public class Toy {
+public abstract class Toy {
 	private String title;
 	private SizeToy size;
 	private AgeToy age;
